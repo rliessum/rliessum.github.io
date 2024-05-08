@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     // jsConfetti.addConfetti();
                     jsConfetti.addConfetti({
                         emojis: ['🦠', '🫥'],
+                        confettiRadius: 6,
+                        confettiNumber: 500,
                      })
                 } else {
                     console.error('File not found');
