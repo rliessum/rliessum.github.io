@@ -3,69 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download with Confetti</title>
-    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        #downloadButton {
-            padding: 10px 16px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #ffffff;
-            background-color: red; /* Vivid red for visibility */
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            outline: none;
-            transition: background-color 0.2s ease-in-out;
-        }
-        #downloadButton:hover, #downloadButton:focus {
-            background-color: #e5533d; /* Slightly darker red on hover/focus */
-        }
-        @keyframes clickAnimation {
-            0% { transform: none; }
-            50% { transform: scale(0.95); }
-            100% { transform: none; }
-        }
-    </style>
+    <title>Salt.exe 🦠</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Download and Celebrate</h1>
-    <button id="downloadButton" onclick="downloadFile()" type="button">Download File</button>
-    <script>
-    
-        const jsConfetti = new JSConfetti();
-    
-        function animateButton() {
-            const button = document.getElementById('downloadButton');
-            button.style.animation = 'clickAnimation 0.4s';
-            setTimeout(() => {
-                button.style.animation = '';
-            }, 400);
-        }
-    
-        function downloadFile() {
-            animateButton();
-            setTimeout(() => {
-                window.location.href = 'salt_malware.zip'; // Ensure this points to your actual file location
-                jsConfetti.addConfetti(); // Trigger confetti on download start
-            }, 400);
-        }
-    </script>
-    
+    <h1>Salt.exe 🦠</h1>
+    <button id="downloadButton" onclick="downloadFile()" type="button" aria-label="Download salt.exe file">Download File</button>
 </body>
 </html>
