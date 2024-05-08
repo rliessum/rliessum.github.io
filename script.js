@@ -19,7 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }).then(response => {
                 if (response.ok) {
                     window.location.href = fileUrl;
-                    jsConfetti.addConfetti();
+                    // jsConfetti.addConfetti();
+                    jsConfetti.addConfetti({
+                        emojis: ['🦠', '🫥'],
+                     })
                 } else {
                     console.error('File not found');
                     alert('File not found.');
