@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# add macos and windows system files
+.DS_Store
+Thumbs.db
+
+# add vscode settings
+.vscode
+
